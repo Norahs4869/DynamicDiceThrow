@@ -7,8 +7,10 @@ import kotlin.random.Random
 
 class DieViewModel : ViewModel() {
     private val dieRoll = MutableLiveData<Int>()
+    var hasRolled = false
 
     fun getDieRoll() : LiveData<Int> {
+        hasRolled = false
         return dieRoll
     }
 

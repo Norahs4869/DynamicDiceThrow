@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
+import edu.temple.dicethrow.ButtonFragment.ButtonInterface
 import java.util.Locale
 import kotlin.random.Random
 
@@ -34,6 +37,8 @@ class DieFragment : Fragment() {
         dieViewModel.getDieRoll().observe(viewLifecycleOwner) {
             dieTextView.text = it.toString()
         }
+
+
 
     }
 
